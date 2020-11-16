@@ -9,6 +9,6 @@ The basic idea is to make an input image into a variable that has gradients asso
 
 ![Dog Dream1](outputs/bliss.jpg)
 
-![Dog Dream2](outputs/dog.jpg)
+![Dog Dream2](outputs/lab.jpg)
 
 ![Dog Dream3](outputs/stairs.jpg)
