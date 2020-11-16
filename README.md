@@ -7,8 +7,8 @@ The basic idea is to make an input image into a variable that has gradients asso
 
 ## Examples
 
-![Dog Dream1](outputs/bliss_20.jpg)
+![Dog Dream1](outputs/bliss.jpg)
 
-![Dog Dream2](outputs/road_20.jpg)
+![Dog Dream2](outputs/dog.jpg)
 
-![Dog Dream3](outputs/starry_night_20.jpg)
+![Dog Dream3](outputs/stairs.jpg)
