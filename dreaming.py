@@ -4,6 +4,7 @@ import torchvision
 from torchvision import transforms
 import numpy as np
 import matplotlib as mpl
+import PIL
 from PIL import Image, ImageFilter, ImageEnhance
 from tqdm import tqdm
 import os
@@ -59,7 +60,7 @@ def toImage(tnsr):
     return tnsr * std_tensor + mean_tensor
 
 
-def dream_once(model, image, layer, iterations, lr):
+def dream_once(model: nn.Module, image: PIL.Image, layer: int, iterations: int, lr: float) -> np.ndarray:
     '''toImage
     Dream using the supplied model and maximise values at the specified layer using gradient ascent
 
@@ -101,7 +102,7 @@ def dream_once(model, image, layer, iterations, lr):
     img = np.clip(toImage(img.cpu()), 0, 1)
     return np.uint8(img*250)
 
-def octave_dream(model, image, num_octaves, octave_scale, layer, iterations, lr):
+def octave_dream(model: nn.Module, image: PIL.Image, num_octaves: int, octave_scale: float, layer: int, iterations: int, lr: int) -> PIL.Image:
     '''
     Dream at multiple octaves i.e. dream the image at increasing sizes so that features are maximised at multiple granularities
 
